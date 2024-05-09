@@ -198,7 +198,7 @@ function ready(data) {
    ticketRegionMessage.textContent = "請選擇選取地區";
    return false;
   }
-  if (!(/^([0-9])$/).test(ticketNum.value) || ticketNum.value <= 0) {
+  if (!(/^[0-9]*$/).test(ticketNum.value) || ticketNum.value <= 0) {
    alert("請輸入套票數量");
    ticketNumMessage.textContent = "請輸入套票數量";
    return false;
@@ -208,7 +208,7 @@ function ready(data) {
    ticketRateMessage.textContent = "請輸入套票價等級，1-10，請輸入數字";
    return false;
   }
-  if (!(/^([0-9])$/).test(ticketPrice.value) || ticketPrice.value <= 0) {
+  if (!(/^[0-9]*$/).test(ticketPrice.value) || ticketPrice.value <= 0) {
    alert("請輸入套票價格或請輸入數字");
    ticketPriceMessage.textContent = "請輸入套票價格或請輸入數字";
    return false;
